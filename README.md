@@ -1,1 +1,4 @@
-# bpms-mobile-dv-clientapp-integration-demo
+appforms-project-client
+=======================
+
+This is a template app

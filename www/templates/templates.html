@@ -1,0 +1,123 @@
+<script type="text/template" id="header-list">
+ <ul class="nav navbar-nav">
+    <li class="header_forms  fh_appform_header_list fh_appform_field_title  active" id="header_forms"><a >Forms<span class="badge pull-right"></span></a></li>
+    <li class="header_drafts fh_appform_header_list fh_appform_field_title " id="header_drafts"><a >Drafts<span class="badge pull-right"></span></a></li>
+    <li class="header_pending fh_appform_header_list fh_appform_field_title " id="header_pending"><a >Pending<span class="badge pull-right"></span></a></li>
+    <li class="header_queued fh_appform_header_list fh_appform_field_title " id="header_queued"><a >Uploading<span class="badge pull-right"></span></a></li>
+    <li class="header_review fh_appform_header_list fh_appform_field_title " id="header_review"><a >Review<span class="badge pull-right"></span></a></li>
+    <li class="header_sent fh_appform_header_list fh_appform_field_title " id="header_sent"><a >Sent<span class="badge pull-right"></span></a></li>
+    <li class="header_settings fh_appform_header_list fh_appform_field_title " id="header_settings"><a >Settings</a></li>
+</ul>
+</script>
+
+<script type="text/template" id="alert-entry">
+<div class="alert <%= alertClass %> alert-dismissible" role="alert"><%= alertMessage %><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+</script>
+
+<script type="text/template" id="draft-list-option">
+<div class="form-group">
+  <%= label%>
+  <%= inputHtml %>
+</div>
+</script>
+
+
+<script type="text/template" id="pending-list-options">
+<div class="btn btn-group col-xs-12"> 
+  <button class="btn btn-primary fh_appform_button_action submit-all col-xs-12">Upload Pending Submissions</button>
+</div>
+</script>
+
+<script type="text/template" id="draft-list-group">
+<div class="panel panel-default col-xs-12 fh_appform_section_area">
+  <div class="panel-heading fh_appform_section_title" data-formid="<%= formId%>" data-type="<%= type %>">
+    <h3 class="panel-title text-center"><i id="fh_appform_drafts-list-panel-<%= type %>-<%= formId%>-body-icon" class="pull-right icon-chevron-sign-down" > </i><%= formName %></h3>
+  </div>
+
+  <div class="panel-body fh_appform_section_area" id="drafts-list-panel-<%= type %>-<%= formId%>">
+    <div class="list-group" id="drafts-list-group-<%= formId%>"> 
+      
+
+    </div>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="draft-list-options">
+<%if(!hideOptions){%>
+    <div class="panel panel-default col-xs-12 fh_appform_section_area">
+      <div class="panel-heading fh_appform_section_title" data-type="<%= type %>">
+        <h3 class="panel-title text-center "><i id="fh_appform_submission-options-<%= type %>-body-icon" class="pull-right icon-chevron-sign-down" > </i>Options</h3>
+      </div>
+      <div class="panel-body" id="submission-options-<%= type %>">
+        
+        <%= optionsHtml %>
+        
+      </div>
+    </div>
+<%}%> 
+</script>
+<script type="text/template" id="draft-list-item">
+  <div class="fh_appform_field_title text-center"><%= timestamp %>
+  <% if(type === "Queued"){%>
+    <div class="progress progress-striped active">
+        <div class="progress-bar"  id="progress-<%= id%>" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+          <span class="sr-only">0% Complete</span>
+        </div>  
+    </div>
+  <%}%>
+  <% if(buttons){ %>
+    <%= buttons %>
+  <%}%>
+</script>
+
+<script type="text/template" id="draft-list-item-buttons">
+
+<% if(buttons){ %>
+<div class="btn-group btn-group-vertical col-xs-12">
+  <%= buttons%>
+</div>  
+<%}%>
+
+</script>
+
+<script type="text/template" id="draft-list-item-button">
+  <button class="btn btn-default text-center col-xs-12 <%= itemClass %>"><%= itemText %></button>
+</script>
+
+<script type="text/template" id="config-buttons">
+<div class="btn-group col-xs-12 fh_appform_config_actions">
+  <button type="button" class="btn btn-default col-xs-6 fh_appform_button_cancel" id="cancelBtn">Cancel</button>
+  <button type="button" class="btn btn-default col-xs-6 fh_appform_button_action" id="saveBtn">Save</button>
+</div>
+</script>
+
+<script type="text/template" id="loading-modal">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Please Wait</h4>
+      </div>
+      <div class="modal-body center-block">
+        <div class="progress">
+          <div class="progress-bar bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="forms-logo">
+<div class="fh_appform_logo_container  col-xs-12">
+  <div class="fh_appform_logo">
+  </div>
+</div>
+</script>

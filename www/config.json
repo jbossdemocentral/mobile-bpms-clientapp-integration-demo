@@ -1,0 +1,57 @@
+{
+"plugins": [
+  {
+     "id": "org.apache.cordova.device",
+     "version":  "0.2.8",
+     "url": "https://github.com/apache/cordova-plugin-device.git#r0.2.8"
+  },
+  {
+    "id": "org.apache.cordova.network-information",
+    "version": "0.2.7",
+    "url": "https://github.com/apache/cordova-plugin-network-information.git#r0.2.7"
+  },
+  {
+    "id": "org.apache.cordova.geolocation",
+    "version": "0.3.6",
+    "url": "https://github.com/apache/cordova-plugin-geolocation.git#r0.3.6"
+  },
+  {
+    "id": "org.apache.cordova.file",
+    "version": "0.2.5",
+    "url":"https://github.com/apache/cordova-plugin-file.git#r0.2.5"
+  },
+  {
+    "id": "org.apache.cordova.camera",
+    "version": "0.2.7",
+    "url": "https://github.com/apache/cordova-plugin-camera.git#r0.2.7"
+  },
+  {
+    "id": "com.phonegap.plugins.barcodescanner",
+    "version": "2.0.0"
+  },
+  {
+    "id": "org.apache.cordova.media",
+    "version": "0.2.8",
+    "url": "https://github.com/apache/cordova-plugin-media.git#r0.2.8"
+  },
+  {
+    "id": "org.apache.cordova.media-capture",
+    "version": "0.2.7",
+    "url": "https://github.com/apache/cordova-plugin-media-capture.git#r0.2.7"
+  },
+  {
+    "id": "org.apache.cordova.file-transfer",
+    "version": "0.4.0",
+    "url": "https://github.com/feedhenry/cordova-plugin-file-transfer.git#fh0.4.0"
+  },
+  {
+    "id": "org.apache.cordova.console",
+    "version": "0.2.6",
+    "url": "https://github.com/apache/cordova-plugin-console.git#r0.2.6"
+  },
+  {
+    "id": "com.feedhenry.plugin.device",
+    "version": "0.0.2",
+    "url": "https://github.com/feedhenry/fh-cordova-plugin-device.git#fh0.0.2"
+  }
+]}

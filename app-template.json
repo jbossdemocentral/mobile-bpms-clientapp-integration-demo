@@ -1,0 +1,9 @@
+{
+  "id": "appforms_client",
+  "name": "Hybrid Forms App",
+  "icon" : "icon-check",
+  "type": "client_hybrid",
+  "repoUrl": "https://github.com/feedhenry/appforms-project-client.git",
+  "repoBranch": "refs/heads/master",
+  "category": "Forms"
+}
