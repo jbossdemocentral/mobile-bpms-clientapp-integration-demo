@@ -6,8 +6,8 @@ This is the Red Hat Mobile Application Platform (MAP) - JBoss BPMSuite (BPMS) in
 Import the project into RH MAP
 ------------------------------
 * Prerequisites:
-- Obtain a login and domain from the Red Hat Mobile team if you don't already have them.
-- You have already created a Bare Project and imported the [Cloud App](https://github.com/jbossdemocentral/mobile-bpms-cloudapp-integration-demo)
+	- Obtain a login and domain from the Red Hat Mobile team if you don't already have them.
+	- You have already created a Bare Project and imported the [Cloud App](https://github.com/jbossdemocentral/mobile-bpms-cloudapp-integration-demo)
 
 1. Login to the appropriate RH MAP domain.
 
