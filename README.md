@@ -15,9 +15,18 @@ Import the project into RH MAP
 
 3. Enter Git URL as https://github.com/jbossdemocentral/mobile-bpms-clientapp-integration-demo.git -> Import and move onto integration
 
+4. Download the form from github gist - https://gist.github.com/hucmaggie/b0a7382d9d6ea49559d7
+
+5. Import the file by doing: `fhc forms create RHSummit2015SutoClaimFormsApp.json`
+
+6. Associate the form with your project.
+
+7. The original theme used in the demo is available as a github gist as well if you want to use it - https://gist.github.com/hucmaggie/72c461a2b9d5ac54a7e5
+
 Notes
 -----
 This project is a bare git repo for the client app that can be imported into RH MAP.
+The form and theme would need to be imported manually using fhc.
 
 Supporting Articles
 -------------------
