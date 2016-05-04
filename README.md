@@ -17,11 +17,15 @@ Import the project into RH MAP
 
 4. Download the form from github gist - https://gist.github.com/hucmaggie/b0a7382d9d6ea49559d7
 
-5. Import the file by doing: `fhc forms create RHSummit2015SutoClaimFormsApp.json`
+5. Import the form file by using the RHMAP command line interface: `fhc appforms forms create --formfile=RHSummit2015AutoClaimFormsApp.json`
 
-6. Associate the form with your project.
+6. The original theme used in the demo is available as a github gist as well if you want to use it - https://gist.github.com/hucmaggie/72c461a2b9d5ac54a7e5
 
-7. The original theme used in the demo is available as a github gist as well if you want to use it - https://gist.github.com/hucmaggie/72c461a2b9d5ac54a7e5
+7. Import the themes file by using the RHMAP command line interface: `fhc appforms themes create --themefile=MaggiesSummit2015Theme.json`
+
+8. Associate the form and theme with your project by going to Projects -> select your project -> Client App -> Forms -> select the imported theme & form -> Save.
+
+9. Rebuild the Client App (left panel of the client app).
 
 Notes
 -----
