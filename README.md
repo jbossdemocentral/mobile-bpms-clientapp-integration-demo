@@ -25,6 +25,8 @@ Import the project into RH MAP
 
 8. Associate the form and theme with your project by going to Projects -> select your project -> Client App -> Forms -> select the imported theme & form -> Save.
 
+![alt text](https://raw.githubusercontent.com/jbossdemocentral/mobile-bpms-clientapp-integration-demo/master/screenshots/RHMAP%20FormAndTheme.png "RH Form + Theme")  
+
 9. Rebuild the Client App (left panel of the client app).
 
 Notes
